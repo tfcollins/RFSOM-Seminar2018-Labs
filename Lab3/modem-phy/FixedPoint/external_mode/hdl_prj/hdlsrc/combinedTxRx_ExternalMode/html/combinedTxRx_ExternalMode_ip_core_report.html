@@ -1,0 +1,784 @@
+<html>
+<head>
+<title>IP Core Generation Report for combinedTxRx_ExternalMode</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+div {
+	line-heigh: 90%;
+}
+
+h2.title {
+	color: #000066;
+	font-weight: bold;
+}
+
+h3.sectionHeading {
+	color: #000066;
+	font-weight: bold;
+}
+
+td.distinctCellColor {
+	background-color: #eeeeff;
+}
+
+td.summaryTableSndColOddRow {
+	background-color: #eeeeff;
+	text-align: right;
+}
+
+td.summaryTableSndColEvenRow {
+	text-align: right;
+}
+
+thead.reportTableHeader {
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+<h2 class="title">IP Core Generation Report for combinedTxRx_ExternalMode</h2>
+<div>
+<h3 class="sectionHeading">Summary</h3>
+<table>
+<tbody>
+<tr>
+<td class="distinctCellColor">IP core name
+</td>
+<td class="summaryTableSndColOddRow">CombinedT_ip
+</td>
+</tr>
+<tr>
+<td>IP core version
+</td>
+<td class="summaryTableSndColEvenRow">1.0
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core folder
+</td>
+<td class="summaryTableSndColOddRow"><a href="matlab:uiopen('hdl_prj\ipcore\CombinedT_ip_v1_0\*.*')">hdl_prj\ipcore\CombinedT_ip_v1_0</a>
+</td>
+</tr>
+<tr>
+<td>IP core zip file name
+</td>
+<td class="summaryTableSndColEvenRow">CombinedT_ip_v1_0.zip
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target platform
+</td>
+<td class="summaryTableSndColOddRow">ADI RF SOM
+</td>
+</tr>
+<tr>
+<td>Target tool
+</td>
+<td class="summaryTableSndColEvenRow">Xilinx Vivado
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Target language
+</td>
+<td class="summaryTableSndColOddRow">VHDL
+</td>
+</tr>
+<tr>
+<td>Reference Design
+</td>
+<td class="summaryTableSndColEvenRow">Receive and transmit path
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">Model
+</td>
+<td class="summaryTableSndColOddRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode')">combinedTxRx_ExternalMode</a>
+</td>
+</tr>
+<tr>
+<td>Model version
+</td>
+<td class="summaryTableSndColEvenRow">1.365
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">HDL Coder version
+</td>
+<td class="summaryTableSndColOddRow">3.11
+</td>
+</tr>
+<tr>
+<td>IP core generated on
+</td>
+<td class="summaryTableSndColEvenRow">01-Feb-2018 13:20:13
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IP core generated for
+</td>
+<td class="summaryTableSndColOddRow"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1085')">Combined TX and RX</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Target Interface Configuration</h3>
+You chose the following target interface configuration for 
+<a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode')">combinedTxRx_ExternalMode</a>
+:
+<br/><br/>
+Processor/FPGA synchronization mode: 
+<b>Free running</b>
+<br/><br/>
+Target platform interface table:
+<br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Port Name
+</td>
+<td>Port Type
+</td>
+<td>Data Type
+</td>
+<td>Target Platform Interfaces
+</td>
+<td>Bit Range / Address / FPGA Pin
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1086')">ValidInTx</a>
+</td>
+<td>Inport
+</td>
+<td>boolean
+</td>
+<td>Tx data Valid In
+</td>
+<td>[0]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1087')">rInTx</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">int16
+</td>
+<td class="distinctCellColor">Tx data I1 In [0:15]
+</td>
+<td class="distinctCellColor">[0:15]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1088')">iInTx</a>
+</td>
+<td>Inport
+</td>
+<td>int16
+</td>
+<td>Tx data Q1 In [0:15]
+</td>
+<td>[0:15]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1089')">FromRadioR</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">int16
+</td>
+<td class="distinctCellColor">Rx data I1 In [0:15]
+</td>
+<td class="distinctCellColor">[0:15]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1090')">FromRadioI</a>
+</td>
+<td>Inport
+</td>
+<td>int16
+</td>
+<td>Rx data Q1 In [0:15]
+</td>
+<td>[0:15]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1091')">FromRadioValidIn</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">Rx data Valid In
+</td>
+<td class="distinctCellColor">[0]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:3967')">LoopBW</a>
+</td>
+<td>Inport
+</td>
+<td>int16
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"100"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:3968')">EQmu</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">int16
+</td>
+<td class="distinctCellColor">AXI4-Lite
+</td>
+<td class="distinctCellColor">x"104"
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:3969')">SelectScope</a>
+</td>
+<td>Inport
+</td>
+<td>int8
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"108"
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:4242')">ErrorSelect</a>
+</td>
+<td class="distinctCellColor">Inport
+</td>
+<td class="distinctCellColor">int8
+</td>
+<td class="distinctCellColor">No Interface Specified
+</td>
+<td class="distinctCellColor">
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1092')">ToRadioR</a>
+</td>
+<td>Outport
+</td>
+<td>sfix16_En14
+</td>
+<td>Tx data I1 Out [0:15]
+</td>
+<td>[0:15]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1093')">ToRadioI</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">sfix16_En14
+</td>
+<td class="distinctCellColor">Tx data Q1 Out [0:15]
+</td>
+<td class="distinctCellColor">[0:15]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:1094')">ToRadioValid</a>
+</td>
+<td>Outport
+</td>
+<td>boolean
+</td>
+<td>Tx data Valid Out
+</td>
+<td>[0]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:4131')">FromIPR</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">sfix16_En13
+</td>
+<td class="distinctCellColor">Rx data I1 Out [0:15]
+</td>
+<td class="distinctCellColor">[0:15]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:4210')">FromIPI</a>
+</td>
+<td>Outport
+</td>
+<td>sfix16_En13
+</td>
+<td>Rx data Q1 Out [0:15]
+</td>
+<td>[0:15]
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor"><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:4211')">FromIPvalid</a>
+</td>
+<td class="distinctCellColor">Outport
+</td>
+<td class="distinctCellColor">boolean
+</td>
+<td class="distinctCellColor">Rx data Valid Out
+</td>
+<td class="distinctCellColor">[0]
+</td>
+</tr>
+<tr>
+<td><a class="code2model" id="code2model" href="matlab:Simulink.ID.hilite('combinedTxRx_ExternalMode:4252')">PacketsRX</a>
+</td>
+<td>Outport
+</td>
+<td>uint32
+</td>
+<td>AXI4-Lite
+</td>
+<td>x"10C"
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sectionHeading">Register Address Mapping</h3>
+The following AXI4-Lite bus accessible registers were generated for this IP core:
+<br/><br/>
+<table>
+<thead class="reportTableHeader">
+<tr>
+<td>Register Name
+</td>
+<td>Address Offset
+</td>
+<td>Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IPCore_Reset
+</td>
+<td>0x0
+</td>
+<td>write 0x1 to bit 0 to reset IP core
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">IPCore_Enable
+</td>
+<td class="distinctCellColor">0x4
+</td>
+<td class="distinctCellColor">enabled (by default) when bit 0 is 0x1
+</td>
+</tr>
+<tr>
+<td>IPCore_Timestamp
+</td>
+<td>0x8
+</td>
+<td>contains unique IP timestamp (yymmddHHMM): 1802011320
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">LoopBW_Data
+</td>
+<td class="distinctCellColor">0x100
+</td>
+<td class="distinctCellColor">data register for Inport LoopBW
+</td>
+</tr>
+<tr>
+<td>EQmu_Data
+</td>
+<td>0x104
+</td>
+<td>data register for Inport EQmu
+</td>
+</tr>
+<tr>
+<td class="distinctCellColor">SelectScope_Data
+</td>
+<td class="distinctCellColor">0x108
+</td>
+<td class="distinctCellColor">data register for Inport SelectScope
+</td>
+</tr>
+<tr>
+<td>PacketsRX_Data
+</td>
+<td>0x10C
+</td>
+<td>data register for Outport PacketsRX
+</td>
+</tr>
+</tbody>
+</table>
+<br/>
+The register address mapping is also in the following C header file for you to use when programming the processor:
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\include\CombinedT_ip_addr.h')">include\CombinedT_ip_addr.h</a>
+<br/>
+The IP core name is appended to the register names to avoid name conflicts.
+</div>
+<div>
+<h3 class="sectionHeading">IP Core User Guide</h3>
+<b>Theory of Operation</b>
+<br/><br/>
+This IP core is designed to be connected to an embedded processor with an 
+<b>AXI4-Lite interface. </b>
+The processor acts as master, and the IP core acts as slave. By accessing the generated registers via the AXI4-Lite interface, the processor can control the IP core, and read and write data from and to the IP core. 
+<br/><br/>
+For example, to reset the IP core, write 0x1 to the bit 0 of IPCore_Reset register. To enable or disable the IP core, write 0x1 or 0x0 to the IPCore_Enable register. To access the data ports of the MATLAB/Simulink algorithm, read or write to the associated data registers.
+<br/><br/>
+<img src="doc_arch_axi4_lite.jpg"/>
+<br/><br/>
+<b>Processor/FPGA Synchronization</b>
+<br/><br/>
+The 
+<b>Free running </b>
+mode means there is no explicit synchronization between embedded processor software execution (SW) and the IP core (HW). SW and HW runs independently. The data written from the processor to IP core takes effect immediately, and the data read from the IP core is the latest data available on the IP core output ports. 
+<br/><br/>
+<img src="free_running.jpg"/>
+<br/><br/>
+<b>Xilinx Vivado Environment Integration</b>
+<br/><br/>
+This IP Core is generated for the Xilinx Vivado environment. The following steps are an example showing how to integrate the generated IP core into Xilinx Vivado environment:
+<br/><br/>
+1. The generated IP core is a zip package file under the IP core folder. Please check the Summary section of this report for the IP zip file name and folder.
+<br/>
+2. In the Vivado project, go to Project Settings -> IP -> Repository Manager, add the folder containing the IP zip file as IP Repository.
+<br/>
+3. In Repository Manger, click the "Add IP" button to add IP zip file to the IP repository. This step adds the generated IP into the Vivado IP Catalog.
+<br/>
+4. In the Vivado project, find the generated IP core in the IP Catalog under category "HDL Coder Generated IP". In you have a Vivado block design open, you can add the generated IP into your block design.
+<br/>
+5. Connect the AXI4_Lite port of the IP core to the embedded processor's AXI master port.
+<br/>
+6. Connect the clock and reset ports of the IP core to the global clock and reset signals.
+<br/>
+7. Assign an Offset Address for the IP core in the Address Editor.
+<br/>
+8. Connect external ports and add FPGA pin assignment constraints to constraint file.
+<br/>
+9. Generate FPGA bitstream and download the bitstream to target device.
+<br/><br/>
+If you are targeting Xilinx Zynq hardwares supported by HDL Coder Support Package for Xilinx Zynq Platform, you can select the board you are using in the Target platform option in the Set Target > Set Target Device and Synthesis Tool task. You can then use Embedded System Integration tasks in HDL Workflow Advisor to help you integrate the generated IP core into Xilinx Vivado environment.
+</div>
+<div>
+<h3 class="sectionHeading">IP Core File List</h3>
+The IP core folder is located at:
+<br/>
+<a href="matlab:uiopen('hdl_prj\ipcore\CombinedT_ip_v1_0\*.*')">hdl_prj\ipcore\CombinedT_ip_v1_0</a>
+<br/>
+Following files are generated under this folder:
+<br/><br/>
+<b>IP core zip file</b>
+<br/>
+<a href="matlab:uiopen('hdl_prj\ipcore\CombinedT_ip_v1_0\*.*')">CombinedT_ip_v1_0.zip</a>
+<br/><br/>
+<b>IP core report</b>
+<br/>
+<a href="matlab:web('hdl_prj\ipcore\CombinedT_ip_v1_0\doc\combinedTxRx_ExternalMode_ip_core_report.html')">doc\combinedTxRx_ExternalMode_ip_core_report.html</a>
+<br/><br/>
+<b>IP core HDL source files</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Combined_TX_and_RX_pkg.vhd')">hdl\vhdl\CombinedT_ip_src_Combined_TX_and_RX_pkg.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_FIR_Interpolation.vhd')">hdl\vhdl\CombinedT_ip_src_FIR_Interpolation.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_IQ_Interface_Mapper.vhd')">hdl\vhdl\CombinedT_ip_src_IQ_Interface_Mapper.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRCGenControl.vhd')">hdl\vhdl\CombinedT_ip_src_CRCGenControl.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRCGenCompute.vhd')">hdl\vhdl\CombinedT_ip_src_CRCGenCompute.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRCGenerator.vhd')">hdl\vhdl\CombinedT_ip_src_CRCGenerator.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRCCompare.vhd')">hdl\vhdl\CombinedT_ip_src_CRCCompare.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_General_CRC_Syndrom_Detector_HDL_Optimized.vhd')">hdl\vhdl\CombinedT_ip_src_General_CRC_Syndrom_Detector_HDL_Optimized.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRC_Check_ES.vhd')">hdl\vhdl\CombinedT_ip_src_CRC_Check_ES.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Convert_Payload_Length_To_Bytes.vhd')">hdl\vhdl\CombinedT_ip_src_Convert_Payload_Length_To_Bytes.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Bit_Packer.vhd')">hdl\vhdl\CombinedT_ip_src_Bit_Packer.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DMA_Interface.vhd')">hdl\vhdl\CombinedT_ip_src_DMA_Interface.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRC_Check_and_DMA_Pack.vhd')">hdl\vhdl\CombinedT_ip_src_CRC_Check_and_DMA_Pack.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_ABS1.vhd')">hdl\vhdl\CombinedT_ip_src_ABS1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_ABS2.vhd')">hdl\vhdl\CombinedT_ip_src_ABS2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Maximum.vhd')">hdl\vhdl\CombinedT_ip_src_Maximum.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Find_Max_and_Set_Output_Shift.vhd')">hdl\vhdl\CombinedT_ip_src_Find_Max_and_Set_Output_Shift.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR4.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR4.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block1.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block1.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2_block.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3_block.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR5.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR5.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block2.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block2.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2_block1.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2_block1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3_block1.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3_block1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR6.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR6.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block3.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block3.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block3.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized1_block3.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2_block2.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized2_block2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3_block2.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized3_block2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR7.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_Opt_Complex_FIR7.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Measure_Phase_Ambiguity.vhd')">hdl\vhdl\CombinedT_ip_src_Measure_Phase_Ambiguity.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block4.vhd')">hdl\vhdl\CombinedT_ip_src_Discrete_FIR_Filter_HDL_Optimized_block4.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Barker_Locate.vhd')">hdl\vhdl\CombinedT_ip_src_Barker_Locate.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_2_Bit_Descrambler.vhd')">hdl\vhdl\CombinedT_ip_src_2_Bit_Descrambler.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DotProduct.vhd')">hdl\vhdl\CombinedT_ip_src_DotProduct.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Decision_Directed.vhd')">hdl\vhdl\CombinedT_ip_src_Decision_Directed.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Map_Symbol.vhd')">hdl\vhdl\CombinedT_ip_src_Map_Symbol.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DotProduct_block.vhd')">hdl\vhdl\CombinedT_ip_src_DotProduct_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DFE.vhd')">hdl\vhdl\CombinedT_ip_src_DFE.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Packeted_To_Unpacked.vhd')">hdl\vhdl\CombinedT_ip_src_Packeted_To_Unpacked.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_PN_Sequence_Generator_nw.vhd')">hdl\vhdl\CombinedT_ip_src_PN_Sequence_Generator_nw.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_QPSK_Modulator_Baseband.vhd')">hdl\vhdl\CombinedT_ip_src_QPSK_Modulator_Baseband.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DFE_block.vhd')">hdl\vhdl\CombinedT_ip_src_DFE_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Header_Controller.vhd')">hdl\vhdl\CombinedT_ip_src_Header_Controller.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_QPSK_Demodulator_Baseband.vhd')">hdl\vhdl\CombinedT_ip_src_QPSK_Demodulator_Baseband.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Equalization_and_Demodulation.vhd')">hdl\vhdl\CombinedT_ip_src_Equalization_and_Demodulation.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Lock_Detector.vhd')">hdl\vhdl\CombinedT_ip_src_Lock_Detector.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_PED.vhd')">hdl\vhdl\CombinedT_ip_src_PED.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Loop_Filter_Configurable.vhd')">hdl\vhdl\CombinedT_ip_src_Loop_Filter_Configurable.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Cosine_HDL_Optimized.vhd')">hdl\vhdl\CombinedT_ip_src_Cosine_HDL_Optimized.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Phase_Shift_FP.vhd')">hdl\vhdl\CombinedT_ip_src_Phase_Shift_FP.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Frequency_Recovery.vhd')">hdl\vhdl\CombinedT_ip_src_Frequency_Recovery.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block1.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_TED_Lock_Detector.vhd')">hdl\vhdl\CombinedT_ip_src_TED_Lock_Detector.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_TED_Buffer_Update1.vhd')">hdl\vhdl\CombinedT_ip_src_TED_Buffer_Update1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Imag_Error.vhd')">hdl\vhdl\CombinedT_ip_src_Imag_Error.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_TED_Buffer_Update1_block.vhd')">hdl\vhdl\CombinedT_ip_src_TED_Buffer_Update1_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Real_Error.vhd')">hdl\vhdl\CombinedT_ip_src_Real_Error.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Gardner_TED_Blocks.vhd')">hdl\vhdl\CombinedT_ip_src_Gardner_TED_Blocks.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_LoopFilter1.vhd')">hdl\vhdl\CombinedT_ip_src_LoopFilter1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Calculate_New_mu.vhd')">hdl\vhdl\CombinedT_ip_src_Calculate_New_mu.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Mod_1.vhd')">hdl\vhdl\CombinedT_ip_src_Mod_1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_InterpControl_Blocks1.vhd')">hdl\vhdl\CombinedT_ip_src_InterpControl_Blocks1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Interpolator.vhd')">hdl\vhdl\CombinedT_ip_src_Interpolator.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Gardner_Timing_Recovery.vhd')">hdl\vhdl\CombinedT_ip_src_Gardner_Timing_Recovery.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Manage_Error_Signals.vhd')">hdl\vhdl\CombinedT_ip_src_Manage_Error_Signals.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_RM_Constellation_Diagram_After_Freq_Sync.vhd')">hdl\vhdl\CombinedT_ip_src_RM_Constellation_Diagram_After_Freq_Sync.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_RM_Constellation_Diagram_After_SRRC.vhd')">hdl\vhdl\CombinedT_ip_src_RM_Constellation_Diagram_After_SRRC.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_RM_Constellation_Diagram_After_Timing.vhd')">hdl\vhdl\CombinedT_ip_src_RM_Constellation_Diagram_After_Timing.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_RM_Spectrum_Plot_From_Radio.vhd')">hdl\vhdl\CombinedT_ip_src_RM_Spectrum_Plot_From_Radio.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Enable_Equalizer_and_Packet_Decode_Latch.vhd')">hdl\vhdl\CombinedT_ip_src_Enable_Equalizer_and_Packet_Decode_Latch.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_SRRC.vhd')">hdl\vhdl\CombinedT_ip_src_SRRC.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Frame_Recover.vhd')">hdl\vhdl\CombinedT_ip_src_Frame_Recover.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block2.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function1.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_SimpleDualPortRAM_singlebit.vhd')">hdl\vhdl\CombinedT_ip_src_SimpleDualPortRAM_singlebit.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_FIFO.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_FIFO.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_FIFO1.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_FIFO1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_SimpleDualPortRAM_generic.vhd')">hdl\vhdl\CombinedT_ip_src_SimpleDualPortRAM_generic.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_FIFO2.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_FIFO2.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Buffer.vhd')">hdl\vhdl\CombinedT_ip_src_Buffer.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_BranchMetric.vhd')">hdl\vhdl\CombinedT_ip_src_BranchMetric.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_ACSUnit.vhd')">hdl\vhdl\CombinedT_ip_src_ACSUnit.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_ACSEngine.vhd')">hdl\vhdl\CombinedT_ip_src_ACSEngine.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_ACSRenorm.vhd')">hdl\vhdl\CombinedT_ip_src_ACSRenorm.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_ACS.vhd')">hdl\vhdl\CombinedT_ip_src_ACS.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_TracebackUnit.vhd')">hdl\vhdl\CombinedT_ip_src_TracebackUnit.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Traceback.vhd')">hdl\vhdl\CombinedT_ip_src_Traceback.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Viterbi_Decoder.vhd')">hdl\vhdl\CombinedT_ip_src_Viterbi_Decoder.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Viterbi_Decode.vhd')">hdl\vhdl\CombinedT_ip_src_Viterbi_Decode.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Receiver_HDL.vhd')">hdl\vhdl\CombinedT_ip_src_Receiver_HDL.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DMA_Model_Driver.vhd')">hdl\vhdl\CombinedT_ip_src_DMA_Model_Driver.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DMA_Control.vhd')">hdl\vhdl\CombinedT_ip_src_DMA_Control.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_DMA_Interface_block.vhd')">hdl\vhdl\CombinedT_ip_src_DMA_Interface_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Buffer_Manage.vhd')">hdl\vhdl\CombinedT_ip_src_Buffer_Manage.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_HDL_Scrambler_2_bits.vhd')">hdl\vhdl\CombinedT_ip_src_HDL_Scrambler_2_bits.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function3.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function3.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Subsystem.vhd')">hdl\vhdl\CombinedT_ip_src_Subsystem.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block3.vhd')">hdl\vhdl\CombinedT_ip_src_MATLAB_Function_block3.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Convolutional_Encoder.vhd')">hdl\vhdl\CombinedT_ip_src_Convolutional_Encoder.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRCGenControl_block.vhd')">hdl\vhdl\CombinedT_ip_src_CRCGenControl_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_CRCGenCompute_block.vhd')">hdl\vhdl\CombinedT_ip_src_CRCGenCompute_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_General_CRC_Generator_HDL_Optimized.vhd')">hdl\vhdl\CombinedT_ip_src_General_CRC_Generator_HDL_Optimized.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Payload.vhd')">hdl\vhdl\CombinedT_ip_src_Payload.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Unpack1.vhd')">hdl\vhdl\CombinedT_ip_src_Unpack1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Preamble.vhd')">hdl\vhdl\CombinedT_ip_src_Preamble.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Unpack.vhd')">hdl\vhdl\CombinedT_ip_src_Unpack.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Random_Data.vhd')">hdl\vhdl\CombinedT_ip_src_Random_Data.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Tx_Controller.vhd')">hdl\vhdl\CombinedT_ip_src_Tx_Controller.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_QPSK_Modulator_Baseband1.vhd')">hdl\vhdl\CombinedT_ip_src_QPSK_Modulator_Baseband1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Packet_Generation.vhd')">hdl\vhdl\CombinedT_ip_src_Packet_Generation.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Raised_Cosine_Transmit_Filter1.vhd')">hdl\vhdl\CombinedT_ip_src_Raised_Cosine_Transmit_Filter1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Subsystem_block.vhd')">hdl\vhdl\CombinedT_ip_src_Subsystem_block.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Subsystem1.vhd')">hdl\vhdl\CombinedT_ip_src_Subsystem1.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Transmitter_HDL.vhd')">hdl\vhdl\CombinedT_ip_src_Transmitter_HDL.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Combined_TX_and_RX_tc.vhd')">hdl\vhdl\CombinedT_ip_src_Combined_TX_and_RX_tc.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_src_Combined_TX_and_RX.vhd')">hdl\vhdl\CombinedT_ip_src_Combined_TX_and_RX.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_dut.vhd')">hdl\vhdl\CombinedT_ip_dut.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_axi_lite_module.vhd')">hdl\vhdl\CombinedT_ip_axi_lite_module.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_addr_decoder.vhd')">hdl\vhdl\CombinedT_ip_addr_decoder.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip_axi_lite.vhd')">hdl\vhdl\CombinedT_ip_axi_lite.vhd</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\hdl\vhdl\CombinedT_ip.vhd')">hdl\vhdl\CombinedT_ip.vhd</a>
+<br/>
+<br/>
+<b>IP core C header file</b>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\CombinedT_ip_v1_0\include\CombinedT_ip_addr.h')">include\CombinedT_ip_addr.h</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'combinedTxRx_AXIMM/Combined TX and RX'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2017b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'combinedTxRx_AXIMM/Combined TX and RX'
+<a href="matlab:open_system('combinedTxRx_AXIMM/Combined TX and RX');">open model 'combinedTxRx_AXIMM/Combined TX and RX'</a><BR>
+Generated on 2018-02-01 18:12:09</h1>
+<H2>HDL check for 'combinedTxRx_AXIMM' complete with 0 errors, 32 warnings, and 9 messages.</H2><BR>
+<H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
+<TABLE>
+<TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR bgcolor="#F0F0F0"><TD>
+<a alt="HDLShared:hdlshared:genericspeednotcharacterized" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>SynthesisToolSpeedValue 2l not characterized for Family zynq. Using default value, SynthesisToolSpeedValue=1, for adaptive pipelining.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product_dotp_0, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product_dotp_1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product_dotp_2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product_dotp_3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product_dotp_4, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product1_dotp_0, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product1_dotp_1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/mul_Dot_Product1_dotp_2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 69 113 117 97 108 105 122 97 116 105 111 110 32 97 110 100 10 68 101 109 111 100 117 108 97 116 105 111 110 47 68 70 69 47 68 70 69 47 80 114 111 100 117 99 116 49]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 69 113 117 97 108 105 122 97 116 105 111 110 32 97 110 100 10 68 101 109 111 100 117 108 97 116 105 111 110 47 68 70 69 47 68 70 69 47 80 114 111 100 117 99 116 50]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 69 113 117 97 108 105 122 97 116 105 111 110 32 97 110 100 10 68 101 109 111 100 117 108 97 116 105 111 110 47 68 70 69 47 68 70 69 47 80 114 111 100 117 99 116 51]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 69 113 117 97 108 105 122 97 116 105 111 110 32 97 110 100 10 68 101 109 111 100 117 108 97 116 105 111 110 47 68 70 69 47 68 70 69 47 77 97 112 32 83 121 109 98 111 108 47 68 101 99 105 115 105 111 110 32 68 105 114 101 99 116 101 100 47 81 80 83 75 32 68 101 99 105 115 105 111 110 115]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Map Symbol/Decision Directed/QPSK Decisions</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Equalization and
+Demodulation/DFE/DFE/Map Symbol/Decision Directed/QPSK Decisions, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 76 111 111 112 32 70 105 108 116 101 114 32 67 111 110 102 105 103 117 114 97 98 108 101 47 68 105 114 101 99 116 32 76 111 111 107 117 112 10 84 97 98 108 101 32 40 110 45 68 41]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Direct Lookup
+Table (n-D)</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Direct Lookup
+Table (n-D), is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 76 111 111 112 32 70 105 108 116 101 114 32 67 111 110 102 105 103 117 114 97 98 108 101 47 68 105 114 101 99 116 32 76 111 111 107 117 112 10 84 97 98 108 101 32 40 110 45 68 41 49]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Direct Lookup
+Table (n-D)1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Direct Lookup
+Table (n-D)1, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 76 111 111 112 32 70 105 108 116 101 114 32 67 111 110 102 105 103 117 114 97 98 108 101 47 80 114 111 100 117 99 116]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 76 111 111 112 32 70 105 108 116 101 114 32 67 111 110 102 105 103 117 114 97 98 108 101 47 80 114 111 100 117 99 116 49]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Loop Filter Configurable/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 80 104 97 115 101 32 83 104 105 102 116 32 70 80 47 71 97 105 110]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Gain</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Gain, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 80 104 97 115 101 32 83 104 105 102 116 32 70 80 47 80 114 111 100 117 99 116]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 80 104 97 115 101 32 83 104 105 102 116 32 70 80 47 67 111 115 105 110 101 10 72 68 76 32 79 112 116 105 109 105 122 101 100 47 101 120 112 32 104 100 108 47 99 111 115 95 104 100 108 47 76 111 111 107 45 85 112 10 84 97 98 108 101]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Cosine
+HDL Optimized/exp hdl/cos_hdl/Look-Up
+Table</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Cosine
+HDL Optimized/exp hdl/cos_hdl/Look-Up
+Table, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 70 114 101 113 117 101 110 99 121 32 82 101 99 111 118 101 114 121 47 80 104 97 115 101 32 83 104 105 102 116 32 70 80 47 67 111 115 105 110 101 10 72 68 76 32 79 112 116 105 109 105 122 101 100 47 101 120 112 32 104 100 108 47 115 105 110 95 104 100 108 47 76 111 111 107 45 85 112 10 84 97 98 108 101]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Cosine
+HDL Optimized/exp hdl/sin_hdl/Look-Up
+Table</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Frequency Recovery/Phase Shift FP/Cosine
+HDL Optimized/exp hdl/sin_hdl/Look-Up
+Table, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 71 97 114 100 110 101 114 32 84 69 68 10 66 108 111 99 107 115 47 77 97 112 32 91 48 44 49 44 50 44 51 44 52 93 10 116 111 32 91 48 44 49 44 50 44 50 44 50 93]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Gardner TED
+Blocks/Map [0,1,2,3,4]
+to [0,1,2,2,2]</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Gardner TED
+Blocks/Map [0,1,2,3,4]
+to [0,1,2,2,2], is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 71 97 114 100 110 101 114 32 84 69 68 10 66 108 111 99 107 115 47 73 109 97 103 32 69 114 114 111 114 47 80 114 111 100 117 99 116 49]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Gardner TED
+Blocks/Imag Error/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Gardner TED
+Blocks/Imag Error/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 71 97 114 100 110 101 114 32 84 69 68 10 66 108 111 99 107 115 47 82 101 97 108 32 69 114 114 111 114 47 80 114 111 100 117 99 116 49]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Gardner TED
+Blocks/Real Error/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Gardner TED
+Blocks/Real Error/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 73 110 116 101 114 112 67 111 110 116 114 111 108 95 66 108 111 99 107 115 49 47 67 97 108 99 117 108 97 116 101 10 78 101 119 32 109 117 47 80 114 111 100 117 99 116]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/InterpControl_Blocks1/Calculate
+New mu/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/InterpControl_Blocks1/Calculate
+New mu/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 73 110 116 101 114 112 111 108 97 116 111 114 47 80 114 111 100 117 99 116]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Interpolator/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Interpolator/Product, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 73 110 116 101 114 112 111 108 97 116 111 114 47 80 114 111 100 117 99 116 49]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Interpolator/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Interpolator/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 73 110 116 101 114 112 111 108 97 116 111 114 47 80 114 111 100 117 99 116 50]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Interpolator/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/Interpolator/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 70 114 97 109 101 32 82 101 99 111 118 101 114 47 71 97 114 100 110 101 114 32 84 105 109 105 110 103 32 82 101 99 111 118 101 114 121 47 76 111 111 112 70 105 108 116 101 114 49 47 80 114 111 112 111 114 116 105 111 110 97 108 32 71 97 105 110]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/LoopFilter1/Proportional Gain</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/LoopFilter1/Proportional Gain, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 84 114 97 110 115 109 105 116 116 101 114 32 72 68 76 47 83 117 98 115 121 115 116 101 109 47 68 111 119 110 115 97 109 112 108 101 53]))">combinedTxRx_AXIMM/Combined TX and RX/Transmitter HDL/Subsystem/Downsample5</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Transmitter HDL/Subsystem/Downsample5, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 84 114 97 110 115 109 105 116 116 101 114 32 72 68 76 47 83 117 98 115 121 115 116 101 109 49 47 68 111 119 110 115 97 109 112 108 101 53]))">combinedTxRx_AXIMM/Combined TX and RX/Transmitter HDL/Subsystem1/Downsample5</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, combinedTxRx_AXIMM/Combined TX and RX/Transmitter HDL/Subsystem1/Downsample5, is in a feedback path. Number of registers required: 1; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:engine:MdlGenMaskInitWarn" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');open_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]))">combinedTxRx_AXIMM</a>
+</TD>
+<TD>Warning</TD>
+<TD>The mask initialization for <a href="matlab:hilite(get_param('hdlmdlgenlib','object'),'none');hilite_system('combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/LoopFilter1')">'combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Frame Recover/Gardner Timing Recovery/LoopFilter1'</a>
+    in the original model is not empty. Please note that the mask initialization is not copied into the generated model for this subsystem, which may result in an unusable generated model. In that case, consider removing code from the mask-initialization pane.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 85 112 115 97 109 112 108 101]))">combinedTxRx_AXIMM/Combined TX and RX/Upsample</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 85 112 115 97 109 112 108 101 49]))">combinedTxRx_AXIMM/Combined TX and RX/Upsample1</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:LatencyMismatch" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 114]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Viterbi Decode/Viterbi Decoder</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, block Viterbi Decoder can have additional latency when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:NumericsMismatch" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 114]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Viterbi Decode/Viterbi Decoder</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, block Viterbi Decoder can have numeric differences when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="comm:hdl:ViterbiDecoder:validateBlock:defaultvalue" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 114]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Viterbi Decode/Viterbi Decoder</a>
+</TD>
+<TD>Message</TD>
+<TD>Default value of TracebackStagesPerPipeline is set to 4</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="comm:hdl:ViterbiDecoder:validateBlock:replacestmetWL" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 114]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Viterbi Decode/Viterbi Decoder</a>
+</TD>
+<TD>Message</TD>
+<TD>The state metric word length has been set to 5 bits in the HDL code</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="comm:hdl:ViterbiDecoder:validateBlock:latencyinfo" href="matlab:hilite(get_param(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77]),'object'),'none');hilite_system(char([99 111 109 98 105 110 101 100 84 120 82 120 95 65 88 73 77 77 47 67 111 109 98 105 110 101 100 32 84 88 32 97 110 100 32 82 88 47 82 101 99 101 105 118 101 114 32 72 68 76 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 47 86 105 116 101 114 98 105 32 68 101 99 111 100 101 114]))">combinedTxRx_AXIMM/Combined TX and RX/Receiver HDL/Viterbi Decode/Viterbi Decoder</a>
+</TD>
+<TD>Message</TD>
+<TD>The generated HDL output has a delay of 20 samples with respect to the original Viterbi Decoder output.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:hdldisp:GeneratingCRPHiliteScript" href="matlab:run('hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightClockRatePipelining')">hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightClockRatePipelining.m</a>
+</TD>
+<TD>Message</TD>
+<TD>Clock-rate pipelining results can be diagnosed by running this script: <a href="matlab:run('hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightClockRatePipelining')">hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightClockRatePipelining.m</a></TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:hdldisp:GeneratingFeedbackHiliteScript" href="matlab:run('hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightFeedbackLoop')">hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightFeedbackLoop.m</a>
+</TD>
+<TD>Message</TD>
+<TD>One or more feedback loops in the model are inhibiting optimizations. To highlight these loops in your model, click the following MATLAB script: <a href="matlab:run('hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightFeedbackLoop')">hdl_prj\hdlsrc\combinedTxRx_AXIMM\highlightFeedbackLoop.m</a></TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="C:/Program Files/MATLAB/R2017b/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="C:/Program%20Files/MATLAB/R2017b/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="C:/Program%20Files/MATLAB/R2017b/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="C:/Program Files/MATLAB/R2017b/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2018 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+</body>
+</html>
