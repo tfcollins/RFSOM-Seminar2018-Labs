@@ -5,7 +5,7 @@ qpskFrames = generateFrame('PayloadBytes',200,'Packets',10);
 
 %% CHANGE ME HERE
 SampleRate = 1e6;
-SamplesPerRXFrame = 2^16; % Change to 2^16 to remove overflow
+SamplesPerRXFrame = 2^16;
 FramesToCollect = 10;
 FrequencyOffset = 0;
 
